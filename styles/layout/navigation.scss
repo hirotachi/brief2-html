@@ -1,13 +1,33 @@
 @use "../abstracts" as *;
 
+.navigation {
+  background-color: $secondary-bg-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem $mobile-padding;
+  font-size: 2rem;
+  &-mobile {
+    display: none;
+  }
+}
 
-header {
-  .logo {
+.logo {
+}
+.links {
+  display: none;
+  @include desktop {
+    display: flex;
   }
-  .links {
-    .link {
+  link {
+  }
+}
+
+.btns {
+  &-nav {
+    @include desktop {
+      display: none;
     }
-  }
-  .other {
   }
 }

@@ -1,3 +1,28 @@
+.navigation {
+  background-color: #23212a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+}
+.navigation-mobile {
+  display: none;
+}
 
+.links {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .links {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .btns-nav {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */
