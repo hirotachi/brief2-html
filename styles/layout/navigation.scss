@@ -1,13 +1,13 @@
-header{
+@use "../abstracts" as *;
 
-  .logo{
+
+header {
+  .logo {
   }
-  .links{
-    .link{
-
+  .links {
+    .link {
     }
   }
-  .other{
-
+  .other {
   }
 }
