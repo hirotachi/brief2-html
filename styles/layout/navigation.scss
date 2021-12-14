@@ -6,10 +6,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem $mobile-padding;
-  font-size: 2rem;
-  &-mobile {
-    display: none;
+  padding: 1.5rem $mobile-padding;
+  position: relative;
+  &__mobile {
+    background-color: inherit;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    left: 0;
+    width: 100%;
+    overflow-y: hidden;
+    transition: all 0.2s ease;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 $mobile-padding;
+    gap: 1rem;
+    text-transform: capitalize;
+    height: 0;
+    a {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $trinary-text-color;
+      text-decoration: none;
+      transform: translateY(10rem);
+      transition: all 0.2s ease;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+    &--open {
+      height: 40vh;
+      a {
+        transform: translateY(0);
+      }
+    }
   }
 }
 
@@ -25,9 +57,14 @@
 }
 
 .btns {
-  &-nav {
+  &__nav {
+    cursor: pointer;
     @include desktop {
       display: none;
     }
   }
+}
+
+.highlight {
+  color: $primary-color;
 }

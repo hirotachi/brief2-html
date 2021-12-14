@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link
       rel="stylesheet"
@@ -14,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/layout/home.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../scripts/main.js"></script>
     <title>Healthy&Tasty</title>
   </head>
@@ -22,9 +24,61 @@
       <div class="logo">logo</div>
       <div class="links">links</div>
       <div class="btns">
-        <span class="btns-nav"><i class="fas fa-bars"></i></span>
+        <span class="btns__nav"><i class="fas fa-bars"></i></span>
       </div>
-      <div class="navigation-mobile"></div>
+      <div class="navigation__mobile">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">food</a></li>
+        <li><a href="#">new branch</a></li>
+      </div>
     </header>
+    <main class="home">
+      <div class="intro">
+        <div class="intro__main">
+          <p class="moto">
+            be the fastest in <span class="highlight">making</span> &
+            <span class="highlight">delivering</span> your food
+          </p>
+          <p class="more">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <span class="btn">order now</span>
+        </div>
+        <div class="pic"></div>
+      </div>
+      <div class="section">
+        <p class="title">our menus</p>
+        <div class="menu">
+          <div class="menu__item">
+            <span class="icon">icon</span>
+            <span class="name">sandwich</span>
+          </div>
+          <div class="menu__item">
+            <span class="icon">icon</span>
+            <span class="name">pizza</span>
+          </div>
+          <div class="menu__item">
+            <span class="icon">icon</span>
+            <span class="name">drink</span>
+          </div>
+          <div class="menu__item">
+            <span class="icon">icon</span>
+            <span class="name">salad</span>
+          </div>
+          <div class="menu__item">
+            <span class="icon">icon</span>
+            <span class="name">burger</span>
+          </div>
+          <div class="menu__item">
+            <span class="icon">icon</span>
+            <span class="name">chicken</span>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

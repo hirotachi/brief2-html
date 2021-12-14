@@ -1,14 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  color: #252c2e;
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", Arial, sans-serif, Serif;
+  margin-bottom: 5rem;
+}
+
 .navigation {
   background-color: #23212a;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
-  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  position: relative;
 }
-.navigation-mobile {
-  display: none;
+.navigation__mobile {
+  background-color: inherit;
+  position: absolute;
+  top: 100%;
+  list-style: none;
+  left: 0;
+  width: 100%;
+  overflow-y: hidden;
+  transition: all 0.2s ease;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 2rem;
+  gap: 1rem;
+  text-transform: capitalize;
+  height: 0;
+}
+.navigation__mobile a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(10rem);
+  transition: all 0.2s ease;
+}
+.navigation__mobile a:hover {
+  color: #ff6360;
+}
+.navigation__mobile--open {
+  height: 40vh;
+}
+.navigation__mobile--open a {
+  transform: translateY(0);
 }
 
 .links {
@@ -19,10 +68,89 @@
     display: flex;
   }
 }
+.btns__nav {
+  cursor: pointer;
+}
 @media only screen and (min-width: 992px) {
-  .btns-nav {
+  .btns__nav {
     display: none;
   }
+}
+
+.highlight {
+  color: #f64555;
+}
+
+.menu {
+  background-color: green;
+}
+.home {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro {
+  display: flex;
+  padding: 0 5rem;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.intro__main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.intro__main .moto {
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.intro__main .more {
+  font-weight: 600;
+}
+.intro__main .btn {
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 60%;
+  text-transform: capitalize;
+  border-radius: 5rem;
+  color: #fff;
+  background-color: #f64555;
+}
+.intro .pic {
+  height: 20rem;
+  width: 100%;
+  background-color: grey;
+}
+
+.section {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.section .title {
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.section .title:after {
+  content: "";
+  height: 0.4rem;
+  width: 60%;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6360;
 }
 
 /*# sourceMappingURL=home.css.map */

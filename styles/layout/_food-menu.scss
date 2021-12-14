@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.menu {
+  background-color: green;
+  &__item {
+    .icon {
+    }
+    .name {
+    }
+  }
+}
