@@ -62,8 +62,15 @@
 }
 
 .logo {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  &:hover {
+    color: $secondary-color;
+  }
   &__icon {
   }
+
   &__text {
     display: none;
     font-weight: bold;

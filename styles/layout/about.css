@@ -442,195 +442,55 @@ footer .socials {
   }
 }
 
-.home {
-  margin-top: 2rem;
+.about {
+  margin-top: 5rem;
+  text-align: center;
   display: flex;
-  flex-direction: column;
   gap: 2rem;
-}
-@media only screen and (min-width: 768px) {
-  .home {
-    gap: 4rem;
-    margin-top: 4rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .home {
-    gap: 6rem;
-    margin-top: 5rem;
-  }
-}
-
-.intro {
-  display: flex;
-  padding: 0 5rem;
-  gap: 3rem;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  padding: 0 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .about {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media only screen and (min-width: 992px) {
-  .intro {
-    flex-direction: row;
-    text-align: left;
+  .about {
     padding: 0 8%;
-    gap: 20%;
   }
 }
-.intro__main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+.about h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
 }
-@media only screen and (min-width: 768px) {
-  .intro__main {
-    margin: 0 15rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .intro__main {
-    flex-basis: 60%;
-    margin: 0;
-    align-items: flex-start;
-  }
-}
-.intro__main .moto {
-  text-transform: capitalize;
-  font-size: clamp(3.5rem, 10vw, 4.5rem);
-  font-weight: bold;
-}
-.intro__main .more {
+.about p {
   font-weight: 600;
 }
-.intro__main .btn {
-  cursor: pointer;
-  margin-top: 1rem;
-  padding: 1rem;
-  width: 60%;
-  text-transform: capitalize;
-  font-weight: 600;
+.about a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff6360;
+  width: 70%;
   border-radius: 5rem;
-  color: #fff;
-  background-color: #f64555;
-  text-align: center;
-  transition: all 0.2s ease;
-}
-.intro__main .btn:hover {
-  background-color: #f63b4c;
-}
-@media only screen and (min-width: 768px) {
-  .intro__main .btn {
-    width: 40%;
-  }
-}
-.intro .pic {
-  height: 20rem;
-  width: 100%;
-  background-color: grey;
-}
-@media only screen and (min-width: 992px) {
-  .intro .pic {
-    height: 30rem;
-  }
-}
-
-.banner {
-  height: 20rem;
-  background-color: grey;
-  margin: 0 2rem;
-  margin-top: 4rem;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  text-shadow: 0 1px 0.3rem rgba(0, 0, 0, 0.4);
-}
-@media only screen and (min-width: 768px) {
-  .banner {
-    height: 30rem;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .banner {
-    height: 40rem;
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-}
-.banner .content {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-}
-@media only screen and (min-width: 768px) {
-  .banner .content h3 {
-    font-size: 3rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .banner .content h3 {
-    font-size: 4rem;
-  }
-}
-.banner .content p {
-  font-size: 1.4rem;
-}
-@media only screen and (min-width: 992px) {
-  .banner .content p {
-    font-size: 1.6rem;
-  }
-}
-.banner .content .order {
   padding: 1rem;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  outline: none;
-  border: none;
-  background-color: #ff6360;
-  color: white;
-  text-transform: capitalize;
-  width: 50%;
-  align-self: center;
+  margin-top: 2rem;
   transition: all 0.2s ease;
-  cursor: pointer;
-  font-size: clamp(1.4rem, 10vw, 1.6rem);
+}
+.about a:hover {
+  background-color: #f64555;
+}
+@media only screen and (min-width: 768px) {
+  .about a {
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 992px) {
-  .banner .content .order {
+  .about a {
     width: 40%;
   }
 }
-.banner .content .order:hover {
-  background-color: #f63b4c;
-}
 
-.section {
-  display: flex;
-  gap: 4rem;
-  flex-direction: column;
-  align-items: center;
-}
-.section__title {
-  text-transform: capitalize;
-  position: relative;
-  width: fit-content;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-.section__title:after {
-  content: "";
-  height: 0.4rem;
-  width: 50%;
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ff6360;
-}
-
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=about.css.map */

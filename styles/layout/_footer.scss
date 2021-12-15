@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 footer {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -13,10 +13,12 @@ footer {
   }
   @include desktop {
     padding: 0 $desktop-spacing;
+    margin-top: 12rem;
   }
   a {
     color: $primary-text-color;
     text-decoration: none;
+    transition: all 0.2s ease;
     &:hover {
       color: $secondary-color;
     }
@@ -47,9 +49,16 @@ footer {
       }
     }
   }
+  .copyright {
+    margin-top: 1rem;
+  }
   .socials {
     display: flex;
     list-style: none;
+    font-size: 3rem;
     gap: 1rem;
+    @include desktop {
+      gap: 2rem;
+    }
   }
 }
