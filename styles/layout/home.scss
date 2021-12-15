@@ -5,6 +5,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  @include tablet {
+    gap: 4rem;
+  }
+  @include desktop {
+    gap: 6rem;
+  }
 }
 
 .intro {
@@ -18,7 +24,7 @@
     flex-direction: row;
     text-align: left;
     padding: 0 $desktop-spacing;
-    gap: 2rem;
+    gap: 20%;
   }
 
   &__main {
@@ -58,7 +64,7 @@
       text-align: center;
       transition: all 0.2s ease;
       &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: darken($primary-color, 2%);
       }
 
       @include tablet {
@@ -92,7 +98,7 @@
     &:after {
       content: "";
       height: 0.4rem;
-      width: 60%;
+      width: 50%;
       position: absolute;
       top: 120%;
       left: 50%;

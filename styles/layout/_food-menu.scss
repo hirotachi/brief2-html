@@ -6,6 +6,9 @@
   position: relative;
   height: 15rem;
   width: 100vw;
+  @include desktop {
+    width: 100%;
+  }
   &__wrapper {
     position: absolute;
     left: 0;
@@ -14,22 +17,33 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 12rem;
+    grid-auto-rows: 14rem;
     overflow-x: scroll;
     gap: 2rem;
     padding: 0 $mobile-spacing;
     &::-webkit-scrollbar {
       display: none;
     }
+    @include desktop {
+      position: static;
+      grid-auto-columns: 14rem;
+      grid-auto-rows: 16rem;
+      gap: 3vw;
+      overflow-x: unset;
+      justify-content: center;
+    }
   }
 
   &__item {
     display: flex;
-    @include size(12rem, 13rem);
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: $trinary-bg-color;
     border-radius: 0.5rem;
+    @include desktop {
+    }
 
     &:hover {
       background-color: $secondary-color;
@@ -52,6 +66,9 @@
       font-weight: bold;
       font-size: 1.4rem;
       text-transform: capitalize;
+      @include desktop {
+        margin-top: 2rem;
+      }
     }
   }
 }

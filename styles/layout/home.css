@@ -16,7 +16,7 @@ body {
 }
 
 .navigation {
-  background-color: #23212a;
+  background-color: #252c2e;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -34,6 +34,7 @@ body {
   .navigation {
     border-radius: 0 0 2rem 2rem;
     margin: 0 8%;
+    padding: 2rem 3rem;
   }
 }
 .navigation__mobile {
@@ -143,6 +144,11 @@ body {
   height: 15rem;
   width: 100vw;
 }
+@media only screen and (min-width: 992px) {
+  .menu {
+    width: 100%;
+  }
+}
 .menu__wrapper {
   position: absolute;
   left: 0;
@@ -152,6 +158,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 12rem;
+  grid-auto-rows: 14rem;
   overflow-x: scroll;
   gap: 2rem;
   padding: 0 2rem;
@@ -159,10 +166,19 @@ body {
 .menu__wrapper::-webkit-scrollbar {
   display: none;
 }
+@media only screen and (min-width: 992px) {
+  .menu__wrapper {
+    position: static;
+    grid-auto-columns: 14rem;
+    grid-auto-rows: 16rem;
+    gap: 3vw;
+    overflow-x: unset;
+    justify-content: center;
+  }
+}
 .menu__item {
   display: flex;
-  width: 12rem;
-  height: 13rem;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -190,6 +206,11 @@ body {
   font-size: 1.4rem;
   text-transform: capitalize;
 }
+@media only screen and (min-width: 992px) {
+  .menu__item .name {
+    margin-top: 2rem;
+  }
+}
 
 .choices {
   list-style: none;
@@ -213,6 +234,16 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+@media only screen and (min-width: 768px) {
+  .home {
+    gap: 4rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .home {
+    gap: 6rem;
+  }
+}
 
 .intro {
   display: flex;
@@ -227,7 +258,7 @@ body {
     flex-direction: row;
     text-align: left;
     padding: 0 8%;
-    gap: 2rem;
+    gap: 20%;
   }
 }
 .intro__main {
@@ -270,7 +301,7 @@ body {
   transition: all 0.2s ease;
 }
 .intro__main .btn:hover {
-  background-color: #f41429;
+  background-color: #f63b4c;
 }
 @media only screen and (min-width: 768px) {
   .intro__main .btn {
@@ -304,7 +335,7 @@ body {
 .section__title:after {
   content: "";
   height: 0.4rem;
-  width: 60%;
+  width: 50%;
   position: absolute;
   top: 120%;
   left: 50%;
