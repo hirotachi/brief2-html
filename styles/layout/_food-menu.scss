@@ -1,11 +1,57 @@
 @use "../abstracts" as *;
 
 .menu {
-  background-color: green;
-  &__item {
-    .icon {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  height: 15rem;
+  width: 100vw;
+  &__wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include size(inherit);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 12rem;
+    overflow-x: scroll;
+    gap: 2rem;
+    padding: 0 $mobile-padding;
+    &::-webkit-scrollbar {
+      display: none;
     }
+  }
+
+  &__item {
+    display: flex;
+    @include size(12rem, 13rem);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $trinary-bg-color;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $trinary-text-color;
+      transition: all 0.2s ease;
+    }
+
+    .icon {
+      background-color: $primary-bg-color;
+      @include size(5rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: $primary-text-color;
+    }
+
     .name {
+      margin-top: 1.5rem;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-transform: capitalize;
     }
   }
 }
