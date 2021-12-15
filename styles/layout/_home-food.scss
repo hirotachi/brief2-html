@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.choices {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  text-transform: capitalize;
+  font-weight: bold;
+  &__choice {
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.list {
+  &__item {
+  }
+}
