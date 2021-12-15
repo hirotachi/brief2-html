@@ -24,12 +24,15 @@
     &::-webkit-scrollbar {
       display: none;
     }
+    @include tablet {
+      overflow-x: unset;
+      grid-auto-columns: 1fr;
+    }
     @include desktop {
       position: static;
       grid-auto-columns: 14rem;
       grid-auto-rows: 16rem;
       gap: 3vw;
-      overflow-x: unset;
       justify-content: center;
     }
   }

@@ -7,9 +7,11 @@
   gap: 2rem;
   @include tablet {
     gap: 4rem;
+    margin-top: 4rem;
   }
   @include desktop {
     gap: 6rem;
+    margin-top: 5rem;
   }
 }
 
@@ -79,6 +81,41 @@
     background-color: grey;
     @include desktop {
       height: 30rem;
+    }
+  }
+}
+
+.banner {
+  height: 20rem;
+  background-color: grey;
+  margin: 0 $mobile-spacing;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 0.3rem rgba(black, 0.4);
+  .content {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    p {
+      font-size: 1.4rem;
+    }
+
+    .order {
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-top: 1rem;
+      outline: none;
+      border: none;
+      background-color: $secondary-color;
+      color: white;
+      text-transform: capitalize;
+      width: 50%;
+      align-self: center;
     }
   }
 }

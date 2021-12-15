@@ -166,13 +166,18 @@ body {
 .menu__wrapper::-webkit-scrollbar {
   display: none;
 }
+@media only screen and (min-width: 768px) {
+  .menu__wrapper {
+    overflow-x: unset;
+    grid-auto-columns: 1fr;
+  }
+}
 @media only screen and (min-width: 992px) {
   .menu__wrapper {
     position: static;
     grid-auto-columns: 14rem;
     grid-auto-rows: 16rem;
     gap: 3vw;
-    overflow-x: unset;
     justify-content: center;
   }
 }
@@ -240,17 +245,29 @@ body {
 }
 
 .food {
+  --image-size: 15rem;
+  --half-size: calc(var(--image-size) / 2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  row-gap: calc(var(--half-size) + 2rem);
   width: 100%;
   padding: 0 2rem;
-  margin-top: 10rem;
-  --image-size: 15rem;
+  margin-top: 8rem;
+}
+@media only screen and (min-width: 768px) {
+  .food {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    padding: 0 5%;
+  }
 }
 @media only screen and (min-width: 992px) {
   .food {
-    --image-size: 20rem;
+    grid-auto-flow: column;
+    grid-template-columns: unset;
+    column-gap: 1rem;
+    padding: 0 8%;
   }
 }
 .food .card {
@@ -262,11 +279,16 @@ body {
   flex-direction: column;
   gap: 1rem;
   border-radius: 1rem;
-  padding-top: calc(var(--image-size) / 2 + 1rem);
+  padding-top: calc(var(--half-size) + 1rem);
+}
+@media only screen and (min-width: 992px) {
+  .food .card {
+    border-radius: 1.5rem;
+  }
 }
 .food .card__img {
   position: absolute;
-  top: calc(0rem - var(--image-size) / 2);
+  top: calc(0rem - var(--half-size));
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
@@ -331,7 +353,18 @@ body {
   width: 80%;
   align-self: center;
   margin-top: 1rem;
-  font-weight: 600;
+  transition: all 0.2s ease;
+  outline: none;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .food .card__order {
+    width: 60%;
+  }
+}
+.food .card__order:hover {
+  background-color: #ff6360;
+  color: white;
 }
 
 .home {
@@ -343,11 +376,13 @@ body {
 @media only screen and (min-width: 768px) {
   .home {
     gap: 4rem;
+    margin-top: 4rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .home {
     gap: 6rem;
+    margin-top: 5rem;
   }
 }
 
@@ -423,6 +458,40 @@ body {
   .intro .pic {
     height: 30rem;
   }
+}
+
+.banner {
+  height: 20rem;
+  background-color: grey;
+  margin: 0 2rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 0.3rem rgba(0, 0, 0, 0.4);
+}
+.banner .content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.banner .content p {
+  font-size: 1.4rem;
+}
+.banner .content .order {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  background-color: #ff6360;
+  color: white;
+  text-transform: capitalize;
+  width: 50%;
+  align-self: center;
 }
 
 .section {
