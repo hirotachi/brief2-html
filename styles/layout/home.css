@@ -220,6 +220,17 @@ body {
   text-transform: capitalize;
   font-weight: bold;
 }
+@media only screen and (min-width: 768px) {
+  .choices {
+    width: 40%;
+    font-size: clamp(1.6rem, 10vw, 1.8rem);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .choices {
+    width: 30%;
+  }
+}
 .choices__choice {
   transition: all 0.2s ease;
   cursor: pointer;
