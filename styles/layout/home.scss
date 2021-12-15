@@ -14,16 +14,30 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @include desktop {
+    flex-direction: row;
+    text-align: left;
+    padding: 0 $desktop-spacing;
+    gap: 2rem;
+  }
 
   &__main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    @include tablet {
+      margin: 0 15rem;
+    }
+    @include desktop {
+      flex-basis: 60%;
+      margin: 0;
+      align-items: flex-start;
+    }
 
     .moto {
       text-transform: capitalize;
-      font-size: 3.5rem;
+      font-size: clamp(3.5rem, 10vw, 4.5rem);
       font-weight: bold;
     }
 
@@ -37,9 +51,19 @@
       padding: 1rem;
       width: 60%;
       text-transform: capitalize;
+      font-weight: 600;
       border-radius: 5rem;
       color: $trinary-text-color;
       background-color: $primary-color;
+      text-align: center;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+
+      @include tablet {
+        width: 40%;
+      }
     }
   }
 
@@ -47,6 +71,9 @@
     height: 20rem;
     width: 100%;
     background-color: grey;
+    @include desktop {
+      height: 30rem;
+    }
   }
 }
 
