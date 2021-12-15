@@ -97,12 +97,33 @@
   text-align: center;
   color: white;
   text-shadow: 0 1px 0.3rem rgba(black, 0.4);
+  @include tablet {
+    height: 30rem;
+    margin-left: $tablet-spacing;
+    margin-right: $tablet-spacing;
+  }
+  @include desktop {
+    height: 40rem;
+    margin-left: $desktop-spacing;
+    margin-right: $desktop-spacing;
+  }
   .content {
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    h3 {
+      @include tablet {
+        font-size: 3rem;
+      }
+      @include desktop {
+        font-size: 4rem;
+      }
+    }
     p {
       font-size: 1.4rem;
+      @include desktop {
+        font-size: 1.6rem;
+      }
     }
 
     .order {
@@ -116,6 +137,15 @@
       text-transform: capitalize;
       width: 50%;
       align-self: center;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      font-size: clamp(1.4rem, 10vw, 1.6rem);
+      @include desktop {
+        width: 40%;
+      }
+      &:hover {
+        background-color: darken($primary-color, 2%);
+      }
     }
   }
 }
