@@ -61,6 +61,16 @@
 }
 
 .logo {
+  &__icon {
+  }
+  &__text {
+    display: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    @include tablet {
+      display: inline-block;
+    }
+  }
 }
 .links {
   display: none;
@@ -88,11 +98,21 @@
 }
 
 .btns {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  align-items: center;
+  @include tablet {
+    font-size: 1.6rem;
+  }
   &__nav {
     cursor: pointer;
     @include tablet {
       display: none;
     }
+  }
+
+  &__cart {
   }
 }
 

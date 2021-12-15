@@ -77,6 +77,17 @@ body {
   transform: translateY(0);
 }
 
+.logo__text {
+  display: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 768px) {
+  .logo__text {
+    display: inline-block;
+  }
+}
+
 .links {
   display: none;
   list-style: none;
@@ -102,6 +113,17 @@ body {
   font-weight: bold;
 }
 
+.btns {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .btns {
+    font-size: 1.6rem;
+  }
+}
 .btns__nav {
   cursor: pointer;
 }
@@ -110,7 +132,6 @@ body {
     display: none;
   }
 }
-
 .highlight {
   color: #f64555;
 }
