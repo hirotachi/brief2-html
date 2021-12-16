@@ -217,7 +217,7 @@ body {
     grid-auto-columns: 15rem;
     grid-auto-rows: 17rem;
     gap: 3vw;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .menu__item {
@@ -300,11 +300,6 @@ body {
 @media only screen and (min-width: 768px) {
   .food {
     --image-size: 20rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .food {
-    --image-size: 22rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -658,7 +653,12 @@ form .submit .icon {
   font-weight: 500;
   font-size: 3rem;
   grid-column: 1/-1;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .general h2 {
+    margin-bottom: 1rem;
+  }
 }
 .general .info {
   display: flex;
