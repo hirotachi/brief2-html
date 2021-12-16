@@ -85,9 +85,22 @@ body {
   color: white;
   text-decoration: none;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .logo:hover {
   color: #ff6360;
+}
+.logo__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo__icon img {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-bottom: -0.1rem;
 }
 .logo__text {
   display: none;
