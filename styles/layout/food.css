@@ -221,6 +221,9 @@ body {
   border-radius: 50%;
   color: #252c2e;
 }
+.menu__item .icon img {
+  width: 3rem;
+}
 .menu__item .name {
   margin-top: 1.5rem;
   font-weight: bold;
@@ -450,20 +453,128 @@ footer .socials {
   }
 }
 
-.featured .title {
-  font-weight: bold;
-  position: relative;
+.section {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  align-items: center;
 }
-.featured .title:after {
+.section__title {
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.section__title:after {
   content: "";
+  height: 0.4rem;
+  width: 50%;
   position: absolute;
-  top: 110%;
+  top: 120%;
   left: 50%;
   transform: translateX(-50%);
-  display: inline-block;
-  height: 0.3rem;
-  width: 40%;
-  background-color: #f64555;
+  background-color: #ff6360;
+}
+
+.foods {
+  padding: 0 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .foods {
+    padding: 0 5%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .foods {
+    padding: 0 8%;
+  }
+}
+
+.list {
+  display: grid;
+  grid-auto-rows: 22rem;
+  width: 100%;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 16rem;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .list {
+    grid-auto-rows: 22rem;
+    gap: 8rem;
+  }
+}
+
+.preview {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  border-radius: 1rem;
+  background: grey;
+  position: relative;
+}
+.preview:hover .order {
+  color: #f64555;
+}
+.preview:hover .order .icon {
+  transform: translateX(20%);
+}
+.preview:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #252c2e;
+  opacity: 0.2;
+}
+.preview .info {
+  z-index: 1;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.preview .info .name {
+  font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .preview .info .name {
+    font-size: 1.6rem;
+  }
+}
+.preview .info .prices .old {
+  text-decoration: line-through;
+  opacity: 0.5;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.preview .info .prices .new {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  .preview .info .prices .new {
+    font-size: 1.6rem;
+  }
+}
+.preview .info .order {
+  transition: all 0.2s ease;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=food.css.map */

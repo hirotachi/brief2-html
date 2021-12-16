@@ -62,6 +62,9 @@
       justify-content: center;
       border-radius: 50%;
       color: $primary-text-color;
+      img {
+        width: 3rem;
+      }
     }
 
     .name {
