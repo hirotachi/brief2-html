@@ -138,6 +138,12 @@
   }
 
   &__cart {
+    color: white;
+    transition: all 0.2s ease;
+    display: none;
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 

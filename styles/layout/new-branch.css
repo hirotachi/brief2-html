@@ -162,6 +162,15 @@ body {
     display: none;
   }
 }
+.btns__cart {
+  color: white;
+  transition: all 0.2s ease;
+  display: none;
+}
+.btns__cart:hover {
+  color: #ff6360;
+}
+
 .highlight {
   color: #f64555;
 }
