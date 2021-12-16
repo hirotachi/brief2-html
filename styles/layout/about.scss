@@ -1,7 +1,6 @@
 @use "shared" as *;
 
 .about {
-  margin-top: 5rem;
   text-align: center;
   display: flex;
   gap: 2rem;
@@ -10,8 +9,7 @@
   padding: 0 $mobile-spacing;
   @include tablet {
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
   @include desktop {
     padding: 0 $desktop-spacing;

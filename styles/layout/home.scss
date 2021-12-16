@@ -1,17 +1,14 @@
 @use "shared" as *;
 
 .home {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   @include tablet {
     gap: 4rem;
-    margin-top: 4rem;
   }
   @include desktop {
     gap: 6rem;
-    margin-top: 5rem;
   }
 }
 
