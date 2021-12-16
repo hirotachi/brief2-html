@@ -91,6 +91,9 @@
   @include tablet {
     display: flex;
   }
+  @include desktop {
+    gap: 4rem;
+  }
 
   &__link {
     text-transform: capitalize;

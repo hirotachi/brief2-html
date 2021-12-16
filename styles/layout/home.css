@@ -111,6 +111,11 @@ body {
     display: flex;
   }
 }
+@media only screen and (min-width: 992px) {
+  .links {
+    gap: 4rem;
+  }
+}
 .links__link {
   text-transform: capitalize;
   color: #fff;
