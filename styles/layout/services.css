@@ -581,6 +581,10 @@ footer .socials {
     align-items: flex-start;
   }
 }
+.sections .section .icon img {
+  width: 6rem;
+  height: 6rem;
+}
 .sections .section .title {
   font-weight: bold;
 }

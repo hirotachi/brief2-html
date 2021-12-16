@@ -73,6 +73,9 @@
       align-items: flex-start;
     }
     .icon {
+      img {
+        @include size(6rem);
+      }
     }
 
     .title {
