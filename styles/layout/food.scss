@@ -38,16 +38,21 @@
   width: 100%;
   align-items: flex-end;
   border-radius: 1rem;
-  background: grey;
+  background: url("../../assets/plates/faizan-saeed-mwYTNZO0WhA-unsplash.jpg")
+    center;
+  background-size: cover;
   position: relative;
+
   &:hover {
     .order {
       color: $primary-color;
+
       .icon {
         transform: translateX(20%);
       }
     }
   }
+
   &:after {
     position: absolute;
     top: 0;
@@ -55,8 +60,10 @@
     @include size(100%);
     content: "";
     background-color: $primary-text-color;
-    opacity: 0.2;
+    opacity: 0.4;
+    border-radius: inherit;
   }
+
   .info {
     z-index: 1;
     margin-left: 2rem;
@@ -65,12 +72,14 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
     .name {
       font-size: 2rem;
       @include tablet {
         font-size: 1.6rem;
       }
     }
+
     .prices {
       .old {
         text-decoration: line-through;
@@ -78,6 +87,7 @@
         font-size: 1.4rem;
         font-weight: 400;
       }
+
       .new {
         font-size: 1.8rem;
         font-weight: 600;
@@ -86,6 +96,7 @@
         }
       }
     }
+
     .order {
       transition: all 0.2s ease;
       display: flex;

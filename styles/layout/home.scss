@@ -73,18 +73,22 @@
   }
 
   .pic {
-    height: 20rem;
+    height: 35rem;
     width: 100%;
-    background-color: grey;
+    margin-right: 1rem;
+    img {
+      object-fit: contain;
+      @include size(100%);
+    }
     @include desktop {
-      height: 30rem;
+      height: 45rem;
+      margin-right: 0;
     }
   }
 }
 
 .banner {
   height: 20rem;
-  background-color: grey;
   margin: 0 $mobile-spacing;
   margin-top: 4rem;
   border-radius: 1rem;
@@ -94,6 +98,22 @@
   text-align: center;
   color: white;
   text-shadow: 0 1px 0.3rem rgba(black, 0.4);
+  background: url("../../assets/plates/9ae234130122117.61795a6c92cca.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: $primary-text-color;
+    opacity: 0.2;
+    @include size(100%);
+    border-radius: inherit;
+  }
+
   @include tablet {
     height: 30rem;
     margin-left: $tablet-spacing;
@@ -104,10 +124,13 @@
     margin-left: $desktop-spacing;
     margin-right: $desktop-spacing;
   }
+
   .content {
+    z-index: 1;
     display: flex;
     gap: 1rem;
     flex-direction: column;
+
     h3 {
       @include tablet {
         font-size: 3rem;
@@ -116,6 +139,7 @@
         font-size: 4rem;
       }
     }
+
     p {
       font-size: 1.4rem;
       @include desktop {
@@ -140,6 +164,7 @@
       @include desktop {
         width: 40%;
       }
+
       &:hover {
         background-color: darken($primary-color, 2%);
       }

@@ -25,7 +25,13 @@
 }
 
 .food {
-  --image-size: 15rem;
+  --image-size: 16rem;
+  @include tablet {
+    --image-size: 20rem;
+  }
+  @include desktop {
+    --image-size: 22rem;
+  }
   --half-size: calc(var(--image-size) / 2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -66,8 +72,11 @@
       left: 50%;
       transform: translateX(-50%);
       border-radius: 50%;
-      background-color: grey;
       @include size(var(--image-size));
+      img {
+        @include size(100%);
+        object-fit: cover;
+      }
     }
 
     &__tag {
