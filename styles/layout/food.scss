@@ -2,11 +2,15 @@
 
 .foods {
   padding: 0 $mobile-spacing;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
   @include tablet {
     padding: 0 $tablet-spacing;
+    gap: 6rem;
   }
   @include desktop {
-    padding: 0 $desktop-spacing;
+    gap: 8rem;
   }
 }
 
@@ -22,6 +26,7 @@
     margin-top: 2rem;
   }
   @include desktop {
+    padding: 0 $desktop-spacing;
     grid-auto-rows: 22rem;
     gap: 8rem;
   }

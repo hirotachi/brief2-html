@@ -8,6 +8,7 @@
   width: 100vw;
   @include desktop {
     width: 100%;
+    padding: 0 $desktop-spacing;
   }
   &__wrapper {
     position: absolute;
@@ -30,10 +31,10 @@
     }
     @include desktop {
       position: static;
-      grid-auto-columns: 14rem;
-      grid-auto-rows: 16rem;
+      grid-auto-columns: 15rem;
+      grid-auto-rows: 17rem;
       gap: 3vw;
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 

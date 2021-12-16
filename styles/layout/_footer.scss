@@ -33,6 +33,9 @@ footer {
     display: flex;
     font-size: 1.4rem;
     flex-direction: column;
+    .footer-logo {
+      @include size(2.5rem);
+    }
   }
   .links {
     display: flex;

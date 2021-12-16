@@ -176,6 +176,7 @@ body {
 @media only screen and (min-width: 992px) {
   .menu {
     width: 100%;
+    padding: 0 8%;
   }
 }
 .menu__wrapper {
@@ -204,10 +205,10 @@ body {
 @media only screen and (min-width: 992px) {
   .menu__wrapper {
     position: static;
-    grid-auto-columns: 14rem;
-    grid-auto-rows: 16rem;
+    grid-auto-columns: 15rem;
+    grid-auto-rows: 17rem;
     gap: 3vw;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .menu__item {
@@ -296,15 +297,15 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .food {
-    grid-auto-flow: column;
-    grid-template-columns: unset;
-    column-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 4rem;
+    row-gap: calc(var(--half-size) + 5rem);
     padding: 0 8%;
   }
 }
 .food .card {
   position: relative;
-  border: 1px solid #ebf9fc;
+  border: 1px solid #d5f2f9;
   padding: 1rem;
   padding-bottom: 2rem;
   display: flex;
@@ -438,6 +439,10 @@ footer .main {
   display: flex;
   font-size: 1.4rem;
   flex-direction: column;
+}
+footer .main .footer-logo {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 footer .links {
   display: flex;
