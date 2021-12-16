@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tasty&healthy - new branch</title>
+    <meta charset="UTF-8" />
+    <title>Tasty&health - contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link
@@ -15,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/layout/new-branch.css" />
+    <link rel="stylesheet" href="../styles/layout/contact.css" />
   </head>
   <body>
     <!--  navigation-->
@@ -50,29 +51,89 @@
       </ul>
     </header>
     <!--end navigation-->
-    <main class="branch">
+
+    <main class="contact">
       <div class="main">
-        <p class="coming">coming soon</p>
-        <h1>Our <span class="highlight">New</span> Branch is on its way.</h1>
-        <p class="text">
-          Sign up to be the first to know when our new branch launches.
-        </p>
-        <form class="form">
+        <div class="intro">
+          <p class="title">Hello there!</p>
+          <p class="title">How can we help you?</p>
+          <p class="email">
+            Hate contact forms? Say <a href="mailto:hello@tandh.co">hello@tandh.co</a>
+          </p>
+        </div>
+
+        <form>
           <label for="email">Your email</label
-          ><input placeholder="Your email" type="email" name="email" id="email" />
-          <button class="submit" type="submit">
-            <i class="fas fa-arrow-right"></i>
-          </button>
+          ><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email address"
+          />
+          <label for="subject">Subject</label
+          ><input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="What is this about?"
+          />
+          <label for="message">Your message</label
+          ><textarea
+            rows="1"
+            placeholder="What's on your mind?"
+            name="message"
+            id="message"
+          ></textarea>
+          <div class="foot">
+            <label for="attach" class="attach">
+              <span class="icon"><i class="fas fa-paperclip fa"></i></span>
+              <span class="text">attachment</span>
+            </label>
+            <input type="file" name="attach" id="attach" />
+            <button type="submit" class="submit">
+              <span class="text">send</span>
+              <span class="icon"><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
         </form>
       </div>
-      <div class="img">img</div>
+      <div class="general">
+        <h2>General contacts</h2>
+        <div class="info">
+          <p class="title">Say</p>
+          <a class="email" href="mailto:hello@tandh.com">hello@tandh.com</a>
+          <a href="tel:00351226001751">(+351) 226 001 751</a>
+        </div>
+        <div class="info">
+          <p class="title">Follow us</p>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <p class="title">Visit us</p>
+          <p>42 rue Moulbert 75016 Paris</p>
+        </div>
+      </div>
     </main>
+
     <!--    footer-->
     <footer>
       <div class="main">
         <span>logo</span>
-        <a href="#">hello@example.com</a>
-        <a href="#">(+351) 226 001 751</a>
+        <a href="mailto:hello@tandh.com">hello@tandh.com</a>
+        <a href="tel:00351226001751">(+351) 226 001 751</a>
         <span class="copyright">&copy; untitled</span>
       </div>
       <div class="links">
