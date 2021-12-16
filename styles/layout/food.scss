@@ -1,0 +1,22 @@
+@use "shared" as *;
+
+.food {
+}
+
+.featured {
+  .title {
+    font-weight: bold;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      height: 0.3rem;
+      width: 40%;
+      background-color: $primary-color;
+    }
+  }
+}
