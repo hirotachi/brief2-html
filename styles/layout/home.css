@@ -217,7 +217,7 @@ body {
     grid-auto-columns: 15rem;
     grid-auto-rows: 17rem;
     gap: 3vw;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .menu__item {
@@ -300,11 +300,6 @@ body {
 @media only screen and (min-width: 768px) {
   .food {
     --image-size: 20rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .food {
-    --image-size: 22rem;
   }
 }
 @media only screen and (min-width: 768px) {

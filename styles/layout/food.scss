@@ -27,8 +27,8 @@
   }
   @include desktop {
     padding: 0 $desktop-spacing;
-    grid-auto-rows: 22rem;
-    gap: 8rem;
+    grid-auto-rows: 20rem;
+    gap: 4rem;
   }
 }
 

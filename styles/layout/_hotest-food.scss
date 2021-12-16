@@ -29,9 +29,7 @@
   @include tablet {
     --image-size: 20rem;
   }
-  @include desktop {
-    --image-size: 22rem;
-  }
+
   --half-size: calc(var(--image-size) / 2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
