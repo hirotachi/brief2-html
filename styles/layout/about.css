@@ -312,7 +312,7 @@ body {
 @media only screen and (min-width: 992px) {
   .food {
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 4rem;
+    column-gap: 2rem;
     row-gap: calc(var(--half-size) + 5rem);
     padding: 0 8%;
   }
