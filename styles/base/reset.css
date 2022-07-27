@@ -9,8 +9,10 @@ html {
 }
 
 body {
+  color: #252c2e;
   font-size: 1.6rem;
   font-family: "Source Sans Pro", Arial, sans-serif, Serif;
+  margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=reset.css.map */
